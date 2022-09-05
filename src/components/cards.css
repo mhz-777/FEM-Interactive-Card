@@ -1,6 +1,28 @@
 
+/* STYLINGS THE CARDS */
 
-.card-front-container {
+
+/* stack the cards on top of each other */
+
+.cards-container {
+    display: grid;
+    margin-top: 4rem;
+}
+
+.back-card-layer, .front-card-layer {
+    grid-area: 1/1;
+}
+
+
+
+
+
+
+
+
+/*------------ CARD FRONT STYLING START ------------*/
+
+.front-card-layer {
 
     background-image: url('../assets/images/bg-card-front.png');
     border-radius: 0.22rem;
@@ -11,11 +33,8 @@
     width: 16.763rem;
     height: 9.1875rem;
 
-    /* container position */
-    position: relative;
-    top: -2.8rem;
-    left: 1.5rem;
-
+    /* position card */
+    margin-top: 5rem;
     
 }
 
@@ -79,6 +98,7 @@
 .bottom-container {
     /* fonts */
     font-size: 0.5rem;
+    letter-spacing: 0.07rem;
 
     /* flex */
     display: flex;
@@ -89,3 +109,50 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+/* ----------CARD FRONT STYLING END-------- */
+
+
+
+
+
+
+/* [[[[[[ CARD BACK STYLING START ]]]]]] */
+
+
+.back-card-layer {
+     /* background image styling */
+     background-image: url('../assets/images/bg-card-back.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 0.22rem;
+     
+     /* container sizing */
+     width: 16.763rem;
+     height: 9.1875rem;
+     
+ 
+     /* flex */
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+    
+
+    /* position the card */
+     margin-left: 3rem;
+ 
+}
+
+
+.cvv {
+    font-size: 0.6rem;
+    letter-spacing: 0.05rem;
+    margin-right: 2rem;
+}
+
+
+
+
+
+
+/* [[[[[[ CARD BACK STYLING END ]]]]]] */

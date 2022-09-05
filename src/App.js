@@ -1,5 +1,4 @@
-import CardBack from "./components/cardback";
-import CardFront from "./components/cardfront";
+import Cards from './components/cards.js';
 import './App.css'
 
 
@@ -7,8 +6,7 @@ function App() {
   return (
     <div className="App">
         <header>
-          <CardBack />
-          <CardFront />
+          <Cards />
         </header>
     </div>
   );

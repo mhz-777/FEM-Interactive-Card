@@ -1,10 +1,13 @@
+import './cards.css';
 
-import './card-front.css'
 
-const CardFront = props => {
+const Cards = props => {
     return (
-        <div className="card-front-container">
-            
+        <div className="cards-container">
+            <div className="back-card-layer">
+                <p className="cvv">000</p>
+            </div>
+
             <div className="front-card-layer">
                 <div className="abstract">
                     <div className="circle"></div>
@@ -19,7 +22,8 @@ const CardFront = props => {
                 </div>
             </div>
         </div>
+
     );
 }
 
-export default CardFront;
+export default Cards;
