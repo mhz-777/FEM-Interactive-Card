@@ -1,0 +1,38 @@
+
+.card-back-container {
+
+    /* background image styling */
+    background-image: url('../assets/images/bg-card-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.22rem;
+    
+    /* container sizing */
+    width: 16.763rem;
+    height: 9.1875rem;
+
+    
+    /* container position */
+    position: relative;
+    top: 1.25rem;
+    left: 5.65rem;
+
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    
+    
+}
+
+
+.back-card-layer {
+    /* padding */
+    padding-right: 2rem;
+}
+
+.cvv {
+    font-size: 0.6rem;
+    letter-spacing: 0.05rem;
+}

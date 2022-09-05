@@ -1,11 +1,12 @@
-// import image
-import cardback from './bg-card-back.png'
+
+
+import './card-back.css'
 
 const CardBack = props => {
     return (
         <div className="card-back-container">
-            <img src={cardback} alt="backside of example card" />
-            <div className="layer">
+            
+            <div className="back-card-layer">
                 <p className="cvv">000</p>
             </div>
         </div>

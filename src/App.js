@@ -1,5 +1,7 @@
 import CardBack from "./components/cardback";
 import CardFront from "./components/cardfront";
+import './App.css'
+
 
 function App() {
   return (
