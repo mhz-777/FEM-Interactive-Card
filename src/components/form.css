@@ -1,0 +1,118 @@
+
+/* main container styling */
+.form-container {
+    margin-top: 4rem;
+    margin-left: 1.33rem;
+    margin-right: 1.33rem;
+    color: hsl(278, 68%, 11%);
+    
+}
+
+/* label styling */
+label{
+    font-size: 0.7rem;
+    letter-spacing: 0.07rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+/* input styling */
+input {
+    height: 2rem;
+    border: solid 1px hsl(279, 6%, 55%);
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+    
+}
+
+input::placeholder {
+    /* font */
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(279, 6%, 55%);
+    letter-spacing: 0.03rem;
+    
+    
+}
+
+/* column container styling */
+
+.column-container {
+    margin-top: 5rem;
+}
+
+.column-container label {
+    display: flex;
+    flex-direction: column;
+}
+
+/* row container styling */
+
+.row-container {
+    display: flex;
+    
+}
+
+
+
+.expiry-date {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-container {
+    display: flex;
+    flex: 1;
+    
+}
+
+.input-container input {
+    width: 4rem;
+    margin-right: 0.5rem;
+
+}
+
+.cvc {
+    display: flex;
+    flex-direction: column;
+    /* allows item to fill remaining space */
+    flex: 1;
+    /* allow shrink past defaults */
+    min-width: 30px;
+}
+
+
+
+/* button container styling */
+.button-container {
+    display: flex;
+}
+
+/* button styling */
+.submit-btn {
+    /* flex grow */
+    display: flex;
+    flex: 1;
+
+    /* button size */
+    height: 2.75rem;
+
+    /* colors */
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+
+    /* font */
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.07rem;
+
+    /* padding */
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+
+    cursor: pointer;
+}
+
+
+
+
+
