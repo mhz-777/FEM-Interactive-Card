@@ -6,7 +6,8 @@
 
 .cards-container {
     display: grid;
-    margin-top: 4rem;
+    place-content: center;
+    padding-top: 1.5rem;
 }
 
 .back-card-layer, .front-card-layer {
@@ -47,8 +48,8 @@
     align-items: center;
 
     /* positioning shapes */
-    padding-top: 0.88rem;
-    padding-left: 0.88rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
 
 }
 
@@ -69,7 +70,7 @@
     background-color: rgba(255, 255, 255, 0.01);
     border: 1px solid white;
     border-radius: 50%;
-    margin-left: 7px;
+    margin-left: 0.5rem;
 
 }
 
@@ -140,6 +141,7 @@
 
     /* position the card */
      margin-left: 3rem;
+     
  
 }
 

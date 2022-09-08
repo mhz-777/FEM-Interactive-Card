@@ -6,10 +6,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-        <header>
-          <Cards />
-        </header>
-        <Form />
+      <Form />
     </div>
   );
 }
