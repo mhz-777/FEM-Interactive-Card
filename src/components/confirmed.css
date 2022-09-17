@@ -35,7 +35,7 @@
 }
 
 .confirmed-image {
-    animation: rotate 0.2s;
+    animation: rotate 0.5s;
 }
 
 .subtext {
@@ -84,5 +84,15 @@
  @keyframes rotate {
     100% {
         transform: rotate(360deg);
+    }
+ }
+
+ /* media queries */
+ @media screen and (min-height: 670px) {
+    .confirmed-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 4rem;
     }
  }

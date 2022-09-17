@@ -36,7 +36,6 @@
 
     /* position card */
     margin-top: 5rem;
-    
 }
 
 
@@ -48,8 +47,8 @@
     align-items: center;
 
     /* positioning shapes */
-    padding-top: 1rem;
-    padding-left: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
 
 }
 
@@ -60,8 +59,8 @@
     width: 25px;
     background-color: white;
     border-radius: 50%;
-    
-    
+
+
 }
 
 .smaller-circle {
@@ -86,8 +85,8 @@
     margin-top: 1rem;
 
     /* padding */
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     /* fonts */
     font-size: 1.05rem;
@@ -104,11 +103,12 @@
     /* flex */
     display: flex;
     justify-content: space-between;
-    
+
 
     /* padding */
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 /* ----------CARD FRONT STYLING END-------- */
@@ -118,32 +118,31 @@
 
 
 
-/* [[[[[[ CARD BACK STYLING START ]]]]]] */
+/* ----- CARD BACK STYLING START ----- */
 
 
 .back-card-layer {
-     /* background image styling */
-     background-image: url('../assets/images/bg-card-back.png');
-     background-size: cover;
-     background-repeat: no-repeat;
-     border-radius: 0.22rem;
-     
-     /* container sizing */
-     width: 16.763rem;
-     height: 9.1875rem;
-     
- 
-     /* flex */
-     display: flex;
-     align-items: center;
-     justify-content: flex-end;
+    /* background image styling */
+    background-image: url('../assets/images/bg-card-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.22rem;
+    
+    /* container sizing */
+    width: 16.763rem;
+    height: 9.1875rem;
     
 
-    /* position the card */
-     margin-left: 3rem;
-     
- 
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+
+   /* position the card */
+    margin-left: 3rem;
 }
+
 
 
 .cvv {

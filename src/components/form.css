@@ -27,7 +27,7 @@ label{
 
 /* input styling */
 input {
-    height: 2rem;
+    height: 2.5rem;
     border: solid 1px hsl(279, 6%, 55%);
     border-radius: 0.25rem;
     margin-top: 0.5rem;
@@ -128,7 +128,36 @@ input::placeholder {
     border: none;
 }
 
+@media screen and (min-height: 670px) {
 
+    .child-container {
+        height: 25vh;
+    }
+
+    .form-container {
+
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        /* margin */
+        margin-top: 1.5rem;
+        
+    }
+
+    .form-container input {
+        height: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 0.88rem;
+    }
+
+    .submit-btn {
+        height: 3.5rem;
+    }
+
+    
+}
 
 
 
