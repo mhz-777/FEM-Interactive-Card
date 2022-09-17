@@ -1,5 +1,6 @@
 import './form.css';
 import Cards from './cards';
+import Confirmed from './confirmed';
 import {useState} from "react";
 
 const Form = () => {
@@ -12,9 +13,20 @@ const Form = () => {
         cvc: ""
     });
 
+    const [submitted, setStatus] = useState();
+
     function handleChange(event) {
         setData({...data, [event.target.name]: event.target.value});
     };
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        setStatus(true);
+        
+    }
+
+   
+   
 
 
     return (
@@ -30,7 +42,7 @@ const Form = () => {
                 />
             </div>
             <div className="form-container">
-                <form action="" className="dataform">
+                <form onSubmit={handleSubmit} className="dataform" autoComplete='off'>
                     <div className="column-container">
                             <label htmlFor="cardholdername" className="holder-name">
                                 CARDHOLDER NAME
@@ -38,7 +50,7 @@ const Form = () => {
                                 type="text" 
                                 name="name"
                                 placeholder="e.g. Jane Appleseed" 
-                                pattern="[a-zA-Z]+"
+                                pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
                                 onChange={handleChange}
                                 required
                                 />
@@ -49,8 +61,9 @@ const Form = () => {
                                 type="text" 
                                 name="number"
                                 placeholder='e.g. 1234 5678 9123 0000' 
-                                pattern= "[0-9]+" 
+                                pattern='^[0-9]+'
                                 onChange={handleChange}
+                                maxLength={16}
                                 required
                                 />
                             </label>
@@ -63,16 +76,18 @@ const Form = () => {
                                     type="text"
                                     name="month"
                                     placeholder="MM" 
-                                    pattern="[0-12]+" 
+                                    pattern='^(0?[1-9]|1[012])$'
                                     onChange={handleChange}
+                                    maxLength={2}
                                     required
                                     />
                                     <input
                                     type="text" 
                                     name="year"
                                     placeholder="YY"
-                                    pattern="[23-99]+" 
+                                    
                                     onChange={handleChange}
+                                    maxLength={2}
                                     required
                                     />
                                 </div>
@@ -83,21 +98,19 @@ const Form = () => {
                                 type="text" 
                                 name="cvc"
                                 placeholder="e.g 123" 
-                                pattern="[001-999]+"
-                                onChange={handleChange}
                                 
+                                onChange={handleChange}
+                                maxLength={3}
                                 required
                                 />
                             </label>
                     </div>
                     <div className="button-container">
-                        <input 
-                        type="button" 
-                        value="Confirm" 
-                        className="submit-btn"
-                        />
+                        <button className="submit-btn">Confirm</button>
                     </div>
+                    {submitted === true && <Confirmed />}
                 </form>
+                
             </div>
         </div>
         

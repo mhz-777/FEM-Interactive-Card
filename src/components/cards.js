@@ -1,7 +1,15 @@
 
 import './cards.css';
-import Form from './form';
 
+
+// adds space after 4 characters in cc num
+function format(string) {
+    return string.toString().replace(/\d{4}(?=.)/g, '$& ');
+}
+
+function addSlash(string) {
+    return string.toString().replace(/^.{2}/g, ' $&/');
+}
 
 const Cards = (props) => {
     return (
@@ -16,11 +24,11 @@ const Cards = (props) => {
                     <div className="smaller-circle"></div>
                 </div>
                 <div className="number-container">
-                    <p className="ccnum">{props.number || "0000 0000 0000 0000"}</p>
+                    <p className="ccnum">{format(props.number) || "0000 0000 0000 0000"}</p>
                 </div>
                 <div className="bottom-container">
-                    <p className="name">{props.name || "JANE APPLESEED"}</p>
-                    <p className="expiry">{(props.month +  props.year) || "00/00"}</p>
+                    <p className="name">{props.name.toUpperCase() || "JANE APPLESEED"}</p>
+                    <p className="expiry">{addSlash(props.month + props.year)|| "00/00"}</p>
                 </div>
             </div>
         </div>

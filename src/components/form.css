@@ -103,6 +103,8 @@ input::placeholder {
     /* flex grow */
     display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
 
     /* button size */
     height: 2.75rem;
@@ -114,13 +116,16 @@ input::placeholder {
     /* font */
     font-family: 'Space Grotesk', sans-serif;
     letter-spacing: 0.07rem;
+    
 
-    /* padding */
+    /* margin */
     margin-left: 0.25rem;
     margin-right: 0.25rem;
+    margin-top: 1rem;
 
     cursor: pointer;
     border-radius: 0.33rem;
+    border: none;
 }
 
 
