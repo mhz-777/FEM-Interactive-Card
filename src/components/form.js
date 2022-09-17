@@ -61,9 +61,9 @@ const Form = () => {
                                 type="text" 
                                 name="number"
                                 placeholder='e.g. 1234 5678 9123 0000' 
-                                pattern='^[0-9]+'
+                                pattern='^([0-9]+( [0-9]+)+)'
                                 onChange={handleChange}
-                                maxLength={16}
+                                maxLength={19}
                                 required
                                 />
                             </label>
