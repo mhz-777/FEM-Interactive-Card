@@ -24,7 +24,7 @@ const Cards = (props) => {
                     <div className="smaller-circle"></div>
                 </div>
                 <div className="number-container">
-                    <p className="ccnum">{format(props.number) || "0000 0000 0000 0000"}</p>
+                    <p className="ccnum">{props.number || "0000 0000 0000 0000"}</p>
                 </div>
                 <div className="bottom-container">
                     <p className="name">{props.name.toUpperCase() || "JANE APPLESEED"}</p>
