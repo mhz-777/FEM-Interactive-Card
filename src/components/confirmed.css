@@ -96,3 +96,11 @@
         margin-top: 4rem;
     }
  }
+
+ @media screen and (min-width: 50em) {
+    
+    .confirmed-container {
+        width: 35%;
+    }
+    
+ }

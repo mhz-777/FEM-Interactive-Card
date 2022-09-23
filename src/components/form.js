@@ -15,6 +15,8 @@ const Form = () => {
 
     const [submitted, setStatus] = useState();
 
+    const [invalid, setValidity] = useState();
+
     function handleChange(event) {
         setData({...data, [event.target.name]: event.target.value});
     };
@@ -25,6 +27,13 @@ const Form = () => {
         
     }
 
+    
+    function handleInvalid(event, name) {
+        event.preventDefault();
+        setValidity(true);
+
+       
+    }
    
    
 
@@ -52,8 +61,10 @@ const Form = () => {
                                 placeholder="e.g. Jane Appleseed" 
                                 pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
                                 onChange={handleChange}
+
                                 required
                                 />
+                                {invalid === true && <p>test</p>}
                             </label>
                             <label htmlFor="cardnumber" className="card-number">
                                 CARD NUMBER
@@ -66,6 +77,7 @@ const Form = () => {
                                 maxLength={19}
                                 required
                                 />
+                                
                             </label>
                     </div>
                     <div className="row-container">

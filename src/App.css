@@ -2,4 +2,101 @@
     
     font-family: 'Space Grotesk', sans-serif;
     color: white;
+    overflow: hidden;
 }
+
+
+
+
+/* desktop styling */
+
+@media screen and (min-width: 50em) {
+    
+    .main-container {
+        display: flex;
+        
+    }
+
+    .child-container {
+        background-color: aquamarine;
+        height: 100vh;
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 28rem;
+        
+    }
+
+    .back-card-layer {
+        width: 298px;
+        height: 163px;
+
+    }
+
+    .front-card-layer {
+        margin-bottom: 1.5rem;
+        width: 298px;
+        height: 163px;
+        
+    }
+
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .dataform {
+        width: 35%;
+    }
+
+    .cvc {
+        margin-left: 0.75rem;
+    }
+
+    
+
+    .number-container {
+        margin-top: 2rem;
+    }
+   
+}
+
+/* for large and in charge screen sizes */
+@media screen and (min-width: 160rem){
+
+    .child-container {
+        width: 20vw;
+    }
+    
+    .back-card-layer {
+        width: 312.9px;
+        height: 171.5px;
+    }
+
+    .front-card-layer {
+        width: 312.9px;
+        height: 171.5px;
+    }
+
+    .number-container {
+        margin-top: 2.75rem;
+    }
+
+    .dataform {
+        width: 20%;
+    }
+
+   
+    
+}
+

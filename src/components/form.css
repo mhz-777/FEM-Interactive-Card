@@ -38,6 +38,7 @@ input {
 input::placeholder {
     /* font */
     font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
     color: hsl(279, 6%, 55%);
     letter-spacing: 0.03rem;
     
@@ -89,6 +90,8 @@ input::placeholder {
     flex: 1;
     /* allow shrink past defaults */
     min-width: 30px;
+
+    margin-left: 0.5rem;
 }
 
 
@@ -158,6 +161,5 @@ input::placeholder {
 
     
 }
-
 
 
