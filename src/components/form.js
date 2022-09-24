@@ -40,11 +40,11 @@ const Form = () => {
                 />
             </div>
             <div className="form-container">
-                <form onSubmit={handleSubmit(formSubmit)} autoComplete='off'>
+                <form onSubmit={handleSubmit(formSubmit)} className="dataform" autoComplete='off'>
                     <div className="column-container">
                         <label htmlFor="cardholdername" className='holder-name'>
                         CARDHOLDER NAME
-                            <input 
+                            <input className={errors.name ? 'bad-input': 'clean-input'}
                                     {...register("name", {
                                         required: "Can't be blank",
                                         minLength: {
@@ -64,7 +64,7 @@ const Form = () => {
                         </label>
                         <label htmlFor="cardnumber" className='card-number'>
                         CARD NUMBER               
-                            <input
+                            <input className={errors.name ? 'bad-input': 'clean-input'}
                                     {...register("number", {
                                         required: "Can't be blank",
                                         maxLength: {
@@ -87,7 +87,7 @@ const Form = () => {
                         <label htmlFor="expdate" className='expiry-date'>
                         EXP. DATE (MM/YY)
                         <div className="input-container">
-                            <input
+                            <input className={errors.name ? 'bad-input': 'clean-input'}
                                     {...register("month", {
                                         required: "Can't be blank",
                                         maxLength: {
@@ -105,7 +105,7 @@ const Form = () => {
                                     maxLength={2}
                                     
                             />
-                            <input
+                            <input className={errors.name ? 'bad-input': 'clean-input'}
                                     {...register("year", {
                                         required: "Can't be blank",
                                         maxLength: {
@@ -126,7 +126,7 @@ const Form = () => {
                         </label>
                         <label htmlFor="cvc" className='cvc'>
                             CVC
-                            <input
+                            <input className={errors.name ? 'bad-input': 'clean-input'}
                                 {...register("cvc", {
                                     required: "Can't be blank",
                                     maxLength: {
