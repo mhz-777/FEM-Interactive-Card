@@ -45,6 +45,7 @@ input::placeholder {
     
 }
 
+
 /* column container styling */
 
 .column-container {
@@ -129,6 +130,13 @@ input::placeholder {
     cursor: pointer;
     border-radius: 0.33rem;
     border: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 10px;
+    letter-spacing: normal;
+    margin-top: 0.5rem;
 }
 
 @media screen and (min-height: 670px) {
