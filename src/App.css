@@ -6,7 +6,7 @@
 }
 
 /* tablet styling */
-@media screen and (min-width: 810px) and (max-width: 1000px){
+@media screen and (min-width: 810px) and (max-width: 1200px){
     
     .cards-container {
         padding-top: 4.5rem;
@@ -15,7 +15,7 @@
 
 /* normal desktop styling */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1259px) {
     
     .main-container {
         display: flex;
@@ -38,15 +38,15 @@
     }
 
     .back-card-layer {
-        width: 298px;
-        height: 163px;
+        width: 402.3px;
+        height: 220.5px;
 
     }
 
     .front-card-layer {
         margin-bottom: 1.5rem;
-        width: 298px;
-        height: 163px;
+        width: 402.3px;
+        height: 220.5px;
         
     }
 
@@ -59,18 +59,38 @@
 
     }
 
-    .dataform {
-        width: 35%;
+    .number-container {
+        margin-top: 2.75rem;
     }
 
-    .cvc {
+    .dataform {
+        width: 40%;
+        margin-bottom: 15rem;
+    }
+
+    .abstract {
+        margin-top: 1.25rem;
+        margin-left: 1.25rem;
+    }
+
+    .circle {
+        width: 35px;
+        height: 35px;
+    }
+
+    .smaller-circle {
+        width: 15px;
+        height: 15px;
         margin-left: 0.75rem;
     }
 
-    
+    .ccnum {
+        font-size: 23px;
+        
+    }
 
-    .number-container {
-        margin-top: 2rem;
+    .cvv {
+        margin-right: 3rem;
     }
    
 }
@@ -81,24 +101,8 @@
     .child-container {
         width: 20vw;
     }
+
     
-    .back-card-layer {
-        width: 312.9px;
-        height: 171.5px;
-    }
-
-    .front-card-layer {
-        width: 312.9px;
-        height: 171.5px;
-    }
-
-    .number-container {
-        margin-top: 2.75rem;
-    }
-
-    .dataform {
-        width: 20%;
-    }
 
    
     
