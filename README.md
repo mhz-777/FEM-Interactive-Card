@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Frontend Mentor | Interactive Card Details Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Goal:
 
-## Available Scripts
 
-In the project directory, you can run:
+![mobile-design](https://user-images.githubusercontent.com/82292594/192124633-1a13bc1e-a08b-4db9-9f01-ddcc9de901f6.jpg) ![desktop-preview](https://user-images.githubusercontent.com/82292594/192124637-4f7b263f-723e-4394-a828-70c223665fb4.jpg)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Demo link: 
 
-### `npm test`
+# Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ * REACTJS! (first react project ever woohoo!)
 
-### `npm run build`
+# Libraries
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ * react-hook-form
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* BIG BIG ups to bluebill1049. Using this library made the custom validation for the form SO much easier then I thought it was going to be! I am blessed to have found out about this form library!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Impressions: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Starting off I was SO confused. I npx-create-react-app in my vscode terminal and wham. A GAZILLION .js files sprouted out of nowhere, packagelock.json files this that holy smokes. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* I was so overwhelmed I had to step away for a day to really understand what was necessary and what wasn't, but after reading documentation and watching some videos I think I have a better idea of what really is going on.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# What I liked about React
 
-## Learn More
+* One of the main benefits of React.js (so I've heard) is the functional component elements of it. However, since only I was working on this    project it ended up just making a bunch of different files with corresponding CSS files everywhere so it did become a little messy. Either way, I wanted to learn React.js eventually so I figured this would be a good project to do so!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [useState] I love useState. That is all I have to say about it.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Challenges
 
-### Code Splitting
+* By FAR the biggest problem I had this for this challenge was planning. I (foolishly) went in blind, and as a result ended up refactoring multiple things over and over again. My next project I will dedicate a good amount of time to pre-planning how I want everything done.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Parent and child elements. It took me HOT minute trying to understand 1. Why it was a thing and 2. how it even worked.
 
-### Analyzing the Bundle Size
+* Grasping the concept of JSX was so strange to me. I knew it was just basically HTML but with JS built in, however it took a little while to get comfortable with the new environment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Organization was a challenge as well. I'm still not too sure about where certain things should and shouldn't go, for example my media queries in this project were all over the place. I ended up putting a bulk of it inside of App.css.
 
-### Making a Progressive Web App
+# Conclusion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* I think I finally realized how important pre-planning is for larger projects like these. Since they aren't just HTML CSS anymore I needed to really think about how everything was supposed to work. Obviously as you read above I didn't but that's just a life lesson for next time to be honest.
 
-### Advanced Configuration
+* I still have alot to learn but I hope I only get better from here :)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
