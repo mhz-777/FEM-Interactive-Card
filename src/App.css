@@ -5,12 +5,17 @@
     overflow: hidden;
 }
 
+/* tablet styling */
+@media screen and (min-width: 810px) and (max-width: 1000px){
+    
+    .cards-container {
+        padding-top: 4.5rem;
+    }
+}
 
+/* normal desktop styling */
 
-
-/* desktop styling */
-
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 1200px) {
     
     .main-container {
         display: flex;
@@ -18,7 +23,6 @@
     }
 
     .child-container {
-        background-color: aquamarine;
         height: 100vh;
         width: 30vw;
         display: flex;
@@ -97,6 +101,21 @@
     }
 
    
+    
+}
+
+/* prevent divs from collapsing */
+
+@media (orientation: landscape) {
+    
+    .cards-container {
+        padding-top: 0.5rem;
+    }
+
+    .form-container {
+        margin-top: 9rem;
+    }
+
     
 }
 

@@ -1,4 +1,4 @@
-import Cards from './components/cards.js';
+
 import Form from './components/form.js';
 import './App.css'
 
