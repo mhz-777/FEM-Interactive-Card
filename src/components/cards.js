@@ -1,11 +1,4 @@
-
 import './cards.css';
-
-
-// adds space after 4 characters in cc num
-function format(string) {
-    return string.toString().replace(/\d{4}(?=.)/g, '$& ');
-}
 
 function addSlash(string) {
     return string.toString().replace(/^.{2}/g, ' $&/');
