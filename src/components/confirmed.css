@@ -1,7 +1,7 @@
 
 
 /* make parent container relative and child container absolute to overlay containers */
-.form-container {
+.dataform {
     position: relative;
 }
 
@@ -97,10 +97,15 @@
     }
  }
 
- @media screen and (min-width: 50em) {
+ @media screen and (min-width: 1200px) {
     
+    /* overlay confirmed on top of form */
+    .dataform {
+        position: relative;
+    }
+
     .confirmed-container {
-        width: 35%;
+        position: absolute;
     }
     
  }
