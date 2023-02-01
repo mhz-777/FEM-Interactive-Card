@@ -8,7 +8,7 @@ Goal:
 
 # Demo
 
-Demo link: 
+Demo link: https://magenta-lolly-03aa50.netlify.app/
 
 # Stack
 
